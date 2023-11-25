@@ -1,0 +1,4 @@
+logging:
+  pattern:
+    console: "%clr([%d{yyyy/MM/dd-HH:mm:ss}]){green} %clr(%-5level){aqua}%clr(-){grey} %clr(%msg%n){white}"
+    file: "%clr([%d{yyyy/MM/dd-HH:mm:ss}]){green} %clr(%-5level){aqua}%clr(-){grey} %clr(%msg%n){white}"

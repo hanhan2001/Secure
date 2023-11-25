@@ -1,0 +1,47 @@
+.loading div:nth-of-type(1) {
+	animation: INTO_BOTTOM_TOP 0.5s;
+}
+
+.loading div:nth-of-type(2) {
+	animation: INTO_TOP_BOTTOM 0.5s;
+}
+
+@keyframes INTO_BOTTOM_TOP {
+	from {
+		margin-top: 100vh;
+	}
+	to {
+		margin-top: 0vh;
+	}
+}
+
+@keyframes INTO_TOP_BOTTOM {
+	from {
+		margin-top: -100vh;
+	}
+	to {
+		margin-top: 0vh;
+	}
+}
+
+@keyframes INTO_MARGIN_TOP_50_VISIBLE {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		margin-top: 50px;
+		opacity: 1;
+	}
+	50% {
+		margin-top: 50px;
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+		display: none;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+	}
+}

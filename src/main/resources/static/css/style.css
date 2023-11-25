@@ -1,0 +1,35 @@
+h1 {
+	font-size: 30px;
+}
+
+button {
+	border: none;
+	border-radius: 3px;
+	background-color: #BBBBBB;
+	padding: 5px 10px 5px 10px;
+	transition: background-color 0.2s;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover {
+	background-color: #999999;
+}
+
+button:active {
+	background-color: #888888;
+}
+
+input {
+	border: none;
+	outline: none;
+	height: 20px;
+	border-bottom: 1px solid #999999;
+	transition: border-bottom 0.5s;
+	position: relative;
+	background-color: transparent;
+}
+
+input:focus {
+	border-bottom: 1px solid #555555;
+}

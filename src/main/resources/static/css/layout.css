@@ -1,0 +1,122 @@
+.content {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content .background {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	background-image: url(../image/background.jpg);
+	background-size: cover;
+	z-index: -1;
+	transform: rotateY(180deg);
+}
+
+.content .background::after {
+	content: "";
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 0;
+}
+
+.content .box {
+	width: 75vw;
+	height: 35vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #999999;
+	position: relative;
+}
+
+.content .box .info {
+	width: calc(100% - 300px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content .box .info img {
+	width: calc(100% - 200px);
+	max-width: 80%;
+}
+
+.content .box .login {
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.content .box .login h1 {
+	margin-bottom: 20px;
+}
+
+.content .box .login input {
+	margin-bottom: 20px;
+}
+
+.content .box .login button {
+	width: 75%;
+	height: 30px;
+}
+
+.loading {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.loading div:nth-of-type(1) {
+	position: absolute;
+	width: 25vw;
+	border-bottom: 100vh solid aqua;
+	border-right: 10vw solid transparent;
+}
+
+.loading div:nth-of-type(2) {
+	position: absolute;
+	right: 0;
+	width: 65vw;
+	border-top: 100vh solid #BBBBBB;
+	border-left: 10vw solid transparent;
+}
+
+.popup {
+	position: absolute;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	z-index: 50;
+}
+
+.popup .info {
+	width: 100vw;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	animation: INTO_MARGIN_TOP_50_VISIBLE 2s;
+	display: none;
+}
+
+.popup .info lable {
+	padding: 5px;
+	padding-inline: 10px;
+	border-radius: 3px;
+	box-shadow: 0 0 5px #AAAAAA;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
